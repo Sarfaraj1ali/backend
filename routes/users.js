@@ -3,7 +3,7 @@ const {User} = require("../models/user");
 const bcrypt = require("bcrypt");
 
 router.post("/", async (req, res) => { 
-
+ console.log(req.body);
 	try{
 		var user = new User(req.body)
 		console.log(user);
